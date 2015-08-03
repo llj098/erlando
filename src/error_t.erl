@@ -17,7 +17,7 @@
 -module(error_t, [InnerMonad]).
 -compile({parse_transform, do}).
 
--behaviour(monad).
+%% -behaviour(monad).
 -export(['>>='/2, return/1, fail/1, run/1, lift/1]).
 
 -ifdef(use_specs).
